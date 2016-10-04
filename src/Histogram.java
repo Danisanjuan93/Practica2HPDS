@@ -15,4 +15,5 @@ public class Histogram<T> {
     public ArrayList<T> getHistogram() {
         return histogram;
     }
+    //Esta cosa va genial.
 }
