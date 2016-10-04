@@ -9,15 +9,15 @@ public class Main {
         HashMap<Integer, Integer> histogram = new HashMap<>();
 
         for (int key : vector) {
-            if (histogram.containsKey(key)) {
-                histogram.put(key, histogram.get(key) + 1);
+            if (!histogram.containsKey(key)) {
+				histogram.put(key, 1);
             } else {
-                histogram.put(key, 1);
+                histogram.put(key, histogram.get(key) + 1);
             }
         }
 
         for (Integer key : histogram.keySet()) {
-            System.out.println(key + " --> " + histogram.get(key));
+            System.out.println(key + " ---> " + histogram.get(key));
         }
 
         System.out.println("Hello World!");
