@@ -3,15 +3,15 @@ import java.util.ArrayList;
 /**
  * Created by Anuar on 04/10/2016.
  */
-public class Histogram {
+public class Histogram<T> {
 
-    private ArrayList<Integer> histogram;
+    private ArrayList<T> histogram;
 
-    public Histogram(ArrayList<Integer> histogram){
+    public Histogram(ArrayList<T> histogram){
         this.histogram = histogram;
     }
 
-    public ArrayList<Integer> getHistogram() {
+    public ArrayList<T> getHistogram() {
         return histogram;
     }
 }
